@@ -50,10 +50,10 @@ RUN flutter precache
 # Accept licenses.
 RUN yes "y" | flutter doctor --android-licenses
 
-# Perform a flutter upgrade
-RUN flutter upgrade
-
 # Perform a doctor run.
 RUN flutter doctor -v
+
+# Perform a flutter upgrade
+RUN flutter upgrade
 
 ENTRYPOINT [ "flutter" ]
